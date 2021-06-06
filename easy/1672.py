@@ -1,4 +1,4 @@
-from typing import List
+"""Richest Customer Wealth"""
 
 
 class Solution:
