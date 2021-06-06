@@ -1,4 +1,5 @@
 """Shuffle the Array"""
+from typing import List
 
 
 class Solution:

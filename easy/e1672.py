@@ -1,4 +1,5 @@
 """Richest Customer Wealth"""
+from typing import List
 
 
 class Solution:
