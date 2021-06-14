@@ -1,6 +1,8 @@
-import numpy as np
-
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
-        digits = [int(num) for num in str(n)]
-        return np.prod(digits) - sum(digits)
+        product = 1
+        sum_of_digits = 0
+        for i in str(n):
+            product *= int(i)
+            sum_of_digits += int(i)
+        return product - sum_of_digits
