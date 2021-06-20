@@ -4,5 +4,3 @@ class Solution:
         for i in range(len(indices)):
             s_copy[indices[i]] = s[i]
         return "".join(s_copy)
-            
-            
