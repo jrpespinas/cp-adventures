@@ -1,10 +1,10 @@
-import random
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        length = len(nums)
-        for i in range(length):
-            addend = target - nums[i]
-            if addend in nums and i != nums.index(addend):
-                return sorted([i, nums.index(addend)])
-            
+        hash_map = {}
+
+        for i in range(len(nums)):
+            if target - nums[i] in hash_map:
+                return [hash_map[target - nums[i]], i]
+            else:
+                hash_map[nums[i]] = i
+
