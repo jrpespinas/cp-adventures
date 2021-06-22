@@ -1,16 +1,11 @@
 class Solution:
     def sortSentence(self, s: str) -> str:
-        sort_s = s.split(" ")
-        test = []
-        for w in sort_s:
-            test.append(w[::-1])
-        
-        new = []
-        sorted_s = sorted(test)
-        for w in sorted_s:
-            w = w[::-1]
-            w = w[:-1]
-            new.append(w)
+        s = s.split()
+        length = len(s)
+        final = [""] * length
+        order = []
+        for i in range(length):
+            order.append(int(s[i][-1]) - 1)
+            final[order[i]] = s[i][:-1]
+        return " ".join(final)
 
-        return " ".join(new)
-        
