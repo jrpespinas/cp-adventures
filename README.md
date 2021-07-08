@@ -1,3 +1,4 @@
-LeetCode Adventures
+Competitive Programming Adventures
 ===
-This repository records my solution after solving various leetcode problems. C++ and Python are the primary languages for the solutions.
+
+This repository is a dump of all C++ programs I used in different competitive programming sites.
