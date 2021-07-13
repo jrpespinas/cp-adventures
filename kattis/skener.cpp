@@ -5,11 +5,11 @@ void solve(int c, int zr, int zc) {
 	string s, b="";
 	cin >> s;
 
-	for(int i=0; i<zr; i++) {
-		for(int j=0; j<c; j++) {	
-			cout << string(zc, s[j]);	
-		}
-		 cout << "\n";
+	for(int j=0; j<c; j++) {	
+		b += string(zc, s[j]);	
+	}
+	for(int i=0; i<zr; i++) {	
+		 cout << b << "\n";
 	}
 }
 
