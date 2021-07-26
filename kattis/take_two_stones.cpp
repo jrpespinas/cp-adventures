@@ -5,11 +5,6 @@ int main() {
 	int x;
 	cin >> x;
 
-	if (x % 2 == 0) {
-		cout << "Bob";
-	}
-	else {
-		cout << "Alice";
-	}
+	cout << (x % 2 == 0 ? "Bob" : "Alice");
 	return 0;
 }
