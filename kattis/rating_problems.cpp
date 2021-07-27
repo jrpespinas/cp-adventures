@@ -2,19 +2,15 @@
 using namespace std;
 
 int main() {
-	int n, k, sum=0, given;
+	int n, k, given, sum=0;
 	float max=0, min=0;
 	cin >> n >> k;
-	for(int i=0; i<k; i++){
+	for(int i=0; i<k; i++) {
 		cin >> given;
 		sum += given;
 	}
-	max = sum;
-	min = sum;
-	for(int i=0; i<n-k; i++) {
-		max = max + 3;
-	 	min = min - 3;
-	}
+	min = sum + ((n-k) * -3);
+	max = sum + ((n-k) * 3);
 	cout << min/n << " " << max/n;
 	return 0;
 }
